@@ -1,26 +1,19 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+/* Original breakpoints: base = tablet, desk >= 900px, mobile <= 620px, tiny <= 380px */
+@custom-variant desk (@media (min-width: 900px));
+@custom-variant mobile (@media (max-width: 620px));
+@custom-variant tiny (@media (max-width: 380px));
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-brand: #9f292d;
+  --color-cream: #fffaf7;
+  --color-ink: #432326;
+  --shadow-card: 0 8px 22px rgba(98, 39, 35, 0.09);
+  --font-nunito: var(--next-nunito), sans-serif;
+  --font-roboto: var(--next-roboto), Arial, sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-cream font-roboto text-sm text-ink;
 }
