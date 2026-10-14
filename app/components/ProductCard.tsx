@@ -21,7 +21,7 @@ export default function ProductCard({
         alt={alt}
       />
       <span
-        className="absolute top-16 left-2.5 text-base leading-none text-[#b5252e] desk:top-33 desk:left-4 mobile:top-23"
+        className="absolute top-20 left-2.5 leading-none text-[#b5252e] desk:top-30 desk:left-4 mobile:top-18 text-4xl"
         aria-hidden="true"
       >
         ♥

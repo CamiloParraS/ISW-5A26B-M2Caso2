@@ -47,7 +47,7 @@ export default function Bestsellers() {
         ))}
       </div>
       <div className="mt-3 flex justify-end">
-        <Pill className="px-5 py-2 text-xs">VIEW ALL</Pill>
+        <Pill className="px-8 tracking-wider py-2 text-xs">VIEW ALL</Pill>
       </div>
     </section>
   );
